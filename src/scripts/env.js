@@ -10,7 +10,7 @@ env = {
     // - cluster:
     //    server: https://rancher.myserver.com:9443/k8s/clusters/c-wnhw2
 
-    CLUSTER_PREFIX: '/k8s/clusters/c-wnhw2'
+    // CLUSTER_PREFIX: '/k8s/clusters/c-wnhw2'
 
     // example without cluster prefix:
     // ...
@@ -18,5 +18,5 @@ env = {
     // - cluster:
     //    server: https://rancher.myserver.com:9443
 
-    // CLUSTER_PREFIX: ''
+    CLUSTER_PREFIX: ''
 }
