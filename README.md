@@ -7,6 +7,7 @@ This is a simple visualizer for use with the Kubernetes API.
 ### Usage:
    * First install a Kubernetes or Container Engine Cluster
    * Clone this repository
+   * Edit env.js to set your cluster prefix as appropriate.
    * Run the script `sh run.sh` or start the proxy manually with `kubectl proxy -w=src/`
 
 ### Prerequisites

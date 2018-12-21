@@ -132,7 +132,7 @@ function getJson(url) {
             reject({ httpRequest, timeout });
         };
 
-        httpRequest.open('GET', url, true);
+        httpRequest.open('GET', env.CLUSTER_PREFIX + url, true);
         httpRequest.timeout = REQUEST_TIMEOUT;
         httpRequest.send();
     });
@@ -224,8 +224,7 @@ function sanitizePodLabels(labels) {
  * @param {Object} deployment The deployment.
  */
 function insertDeployment(deployment) {
-    if (
-        !deployment ||
+    if (!deployment ||
         !deployment.spec.selector ||
         !deployment.spec.selector.matchLabels ||
         !deployment.spec.selector.matchLabels.app ||
